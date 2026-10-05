@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Virtual Tabletop</title>
+    <script type="module" crossorigin src="./assets/index-D86D_iME.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Do95Wdcq.css">
+  </head>
+  <body>
+    <!--
+      Three stacked layers, in z order. The canvas holds the art, the grid and
+      the tokens; the overlay holds every glyph — nameplates, HP, the resize
+      handle — because text in a canvas texture is misery and DOM text is free.
+      See ARCHITECTURE.md §5.
+    -->
+    <div id="stage">
+      <canvas id="canvas"></canvas>
+      <div id="overlay" aria-hidden="true"></div>
+    </div>
+    <div id="chrome"></div>
+  </body>
+</html>
